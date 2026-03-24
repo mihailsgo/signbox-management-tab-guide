@@ -1,230 +1,202 @@
-# Management Section User Guide
+# SignBox Management User Guide
 
-This guide is written for non-technical users.  
-It explains exactly where to click in the **Management** section and what each screen means.
+## Who this guide is for
 
-## What the Management section is used for
+This guide is for first-time and junior users who need to maintain reusable document configuration in SignBox.
 
-The **Management** section helps your team keep document settings organized.
+## What the Management section does
 
-- **Document profiles**: ready-made profile records used when preparing documents.
-- **Document attributes**: extra information fields that can be added to document setup.
+The **Management** section controls reusable setup data used during process creation:
 
-You can think of Management as the place where you keep reusable document settings in order.
+- **Document profiles** define default behavior for document handling.
+- **Document attributes** define reusable data fields (for example, custom metadata fields).
 
-## How to open Management
+If you are creating or maintaining profile templates, this is the correct section.
 
-### Step 1: Open the Signbox website
+## Access and navigation
 
-Open `https://signbox.trustlynx.com/`.
+### Task: Sign in and open Management
 
-### Step 2: Sign in
+**When to use this task:** start of every management session.
 
-1. Type your email in **Username or email**.
-2. Type your password in **Password**.
+**Navigation path:** `SignBox login` -> top menu -> **Management**
+
+**Click path:**
+1. Open `https://signbox.trustlynx.com/`.
+2. Enter your credentials.
 3. Click **Sign In**.
+4. In the top menu, click **Management**.
 
-![Login screen](images/management/annotated/01-login-page-annotated.png)
+![Login](images/management/annotated/01-login-page-annotated.png)
 
-### Step 3: Open Management from the top menu
+Callouts:
+- **1** Username or email field for account identity.
+- **2** Password field for secure authentication.
+- **3** Language selector before login.
+- **4** **Sign In** button to enter the portal.
 
-1. After login, look at the top menu.
-2. Click **Management**.
+![Open Management](images/management/annotated/02-post-login-home-annotated.png)
 
-![Open Management from top menu](images/management/annotated/02-post-login-home-annotated.png)
-
-## Management screen layout (what you see first)
-
-When Management opens, the screen has 4 important areas:
-
-1. Top menu (where **Management** is highlighted).
-2. Left menu (Document profiles / Document attributes).
-3. Main work area (table or form).
-4. Action button (for example **Create new profile**).
+Callouts:
+- **1** Use **Management** in top navigation to open configuration pages.
+- **2** This page is process creation, not configuration.
+- **3** Workflow action buttons belong to process creation, not Management.
 
 ![Management overview](images/management/annotated/03-management-overview-annotated.png)
 
----
+Callouts:
+- **1** Top navigation confirms current section.
+- **2** Left menu switches between **Document profiles** and **Document attributes**.
+- **3** Main title confirms current page.
+- **4** Primary button starts creation flow.
 
-## Document Profiles
+## Document profiles
 
-### What this page is for
+### What this screen is for
 
-Use **Document profiles** to view, add, and update profile records.
+Use **Document profiles** to review, create, and modify profile templates used later in signing processes.
 
-### What is visible on the list
+### Task: Review profiles in the list
 
-The table has these columns:
+**When to use this task:** before editing, before creating a duplicate profile, and during QA checks.
 
-- **Profile name**: profile title. This text is clickable.
-- **Document type**: document category used by the profile.
-- **Owner group**: group responsible for the profile.
-- **Attribute count**: number of linked attributes.
-- **E-Seal**: shows `Yes` or `No`.
+**Navigation path:** **Management** -> **Document profiles**
 
 ![Document profiles list](images/management/annotated/04-document-profiles-list-annotated.png)
 
-### How to open an existing profile
+Callouts:
+- **1** **Profile name** is clickable and opens edit form.
+- **2** Column headers are your profile review checklist.
+- **3** **Create new profile** starts a blank profile.
+- **4** **E-Seal** quickly indicates whether a seal profile is configured.
 
-1. Click **Document profiles** in the left menu.
-2. In the **Profile name** column, click the profile you want to open.
-3. The profile opens in an editable form screen.
-4. Review the values before making changes.
+Important columns:
+- **Profile name**: profile identifier used by admins.
+- **Document type**: profile category applied in process setup.
+- **Owner group**: ownership and maintenance responsibility.
+- **Attribute count**: number of linked attributes.
+- **E-Seal**: `Yes` or `No` based on seal profile presence.
 
-What you should see now:
+### Task: Open and update an existing profile
 
-- Fields such as Profile name, Document type, and Owner group.
-- Option checkboxes (for example E-Seal required, Review required).
-- **Submit** button near the bottom-right of the form.
+**When to use this task:** when business settings need to be changed on an existing profile.
 
-![Opened profile screen](images/management/annotated/05-document-profiles-detail-annotated.png)
-
-### How to edit an existing profile
-
-1. Open a profile from the list (steps above).
-2. Click inside any field you need to update.
-3. Update text fields (for example Profile name or Owner group).
-4. Set or clear checkboxes based on your business need.
-5. Scroll if needed and click **Submit**.
-6. Return to the list and confirm the profile still appears correctly.
-
-![Edit profile screen](images/management/annotated/06-document-profiles-edit-annotated.png)
-
-### How to create a new profile
-
-1. In **Document profiles**, click **Create new profile**.
-2. Fill in these visible fields:
-   - **Profile name**
-   - **Document type**
-   - **Owner group**
-   - **E-Seal profile name** (if your process uses it)
-3. Choose the checkbox options you need:
-   - **E-Seal required**
-   - **Review required**
-   - **Do not cancel process on decline**
+**Click path:**
+1. Click a value in **Profile name**.
+2. Review current values.
+3. Update needed fields.
 4. Click **Submit**.
-5. Check the profiles list to confirm the new profile appears.
 
-![Create profile form](images/management/annotated/07-document-profiles-create-form-annotated.png)
+![Open profile](images/management/annotated/05-document-profiles-detail-annotated.png)
 
-### Field help for new users (Document profiles form)
+Callouts:
+- **1** Existing profiles open in editable mode.
+- **2** Core identity fields: **Profile name**, **Document type**, **Owner group**.
+- **3** **Attributes** section links reusable metadata fields.
+- **4** **Submit** persists changes.
 
-- **Profile name**: a clear name users can recognize later.
-- **Document type**: choose the matching document category.
-- **Owner group**: choose who owns and maintains this profile.
-- **E-Seal profile name**: fill only if your team uses e-seal.
-- **E-Seal required**: switch on when e-seal must be used.
-- **Review required**: switch on when review is mandatory.
-- **Do not cancel process on decline**: keeps process running even when a decline happens.
+![Edit profile options](images/management/annotated/06-document-profiles-edit-annotated.png)
 
----
+Callouts:
+- **1** **E-Seal profile name**: seal template reference.
+- **2** **E-Seal required**: enforces seal behavior.
+- **3** **Review required**: requires review workflow.
+- **4** **Do not cancel process on decline**: keeps process active when decline occurs.
 
-## Document Attributes
+### Task: Create a new profile
 
-### What this page is for
+**When to use this task:** when a new document type or workflow variant must be standardized.
 
-Use **Document attributes** to create information fields that can be reused.
+**Click path:**
+1. In **Document profiles**, click **Create new profile**.
+2. Fill required fields.
+3. Configure optional behavior.
+4. Add attributes if needed.
+5. Click **Submit**.
+6. Confirm new row appears in the list.
 
-### What is visible on the list
+![Create profile](images/management/annotated/07-document-profiles-create-form-annotated.png)
 
-The table columns are:
+Callouts:
+- **1** Page title confirms create mode.
+- **2** Required fields must be completed.
+- **3** Attributes can be added by **New**.
+- **4** **Submit** creates profile and returns to list.
 
-- **Attribute name**
-- **Attribute type**
-- **Required**
+Field meaning and pre-submit check:
+- **Profile name**: clear, stable business name.
+- **Document type**: exact type expected in business flow.
+- **Owner group**: team accountable for updates.
+- **E-Seal profile name**: fill when seal profile is part of process policy.
+- **E-Seal required**: enable if seal must be enforced.
+- **Review required**: enable where review is mandatory.
+- **Do not cancel process on decline**: enable only when decline should not terminate process.
+- **Before submit**: validate required fields, checkbox logic, and attribute relevance.
+
+## Document attributes
+
+### What this screen is for
+
+Use **Document attributes** to maintain reusable fields that can be linked to profiles.
+
+### Task: Review attribute catalog
+
+**When to use this task:** before creating new attributes or while validating existing field inventory.
+
+**Navigation path:** **Management** -> **Document attributes**
 
 ![Document attributes list](images/management/annotated/08-document-attributes-list-annotated.png)
 
-### How to create a new attribute
+Callouts:
+- **1** Left menu confirms **Document attributes** section is active.
+- **2** Main table is your reusable attribute catalog.
+- **3** **Create new attribute** opens creation modal.
+- **4** **Required** column shows whether attribute must be filled.
 
-1. Click **Document attributes** in the left menu.
-2. Click **Create new attribute**.
-3. In the pop-up window:
-   - Type **Attribute name**.
-   - Choose **Attribute type**.
-   - Tick **Required** if users must fill this field.
-4. Click **Submit**.
-5. Close the pop-up if needed and verify the attribute appears in the list.
+### Task: Create a new attribute
 
-![Create attribute popup](images/management/annotated/09-document-attributes-create-form-annotated.png)
+**When to use this task:** when profile authors need a new reusable metadata field.
 
-### Field help for new users (Create attribute popup)
+**Click path:**
+1. Click **Create new attribute**.
+2. Enter **Attribute name**.
+3. Select **Attribute type**.
+4. Set **Required** if mandatory.
+5. Click **Submit**.
 
-- **Attribute name**: short, clear label.
-- **Attribute type**: how the value will be entered (for example Text).
-- **Required**: if checked, this field should be completed by users.
+![Create attribute](images/management/annotated/09-document-attributes-create-form-annotated.png)
 
----
+Callouts:
+- **1** Modal title confirms create action.
+- **2** **Attribute name** should be business-understandable.
+- **3** **Attribute type** controls how users provide values.
+- **4** **Required** makes the field mandatory.
+- **5** **Submit** saves and closes modal.
 
-## Screen element explanations (simple language)
+Attribute field guidance:
+- **Attribute name**: short, unique, meaningful.
+- **Attribute type**: choose input behavior that fits real data (`Text`, `Datetime`, `Checkbox`).
+- **Required**: enable only when missing data should block completion.
 
-- **Management**: the menu item that opens settings pages.
-- **Document profiles**: profile records page.
-- **Document attributes**: attributes page.
-- **Blue profile name text**: opens that profile.
-- **Create new profile**: opens the profile creation form.
-- **Create new attribute**: opens the attribute pop-up.
-- **Submit**: saves what you entered.
-- **Attribute count**: tells how many attributes are linked.
-- **E-Seal Yes/No**: quick status for e-seal usage.
+## Common mistakes and recovery
 
----
+- **Editing wrong section**: verify left menu selection before changes.
+- **Skipping list review before create**: check existing profiles/attributes first to avoid duplicates.
+- **Incorrect checkbox policy**: review workflow implications before enabling profile options.
+- **Unclear names**: rename using business language and retry submit.
+- **Unexpected result after submit**: return to list and confirm row values; reopen and correct if needed.
 
-## Helpful tips
+## Junior-user review checklist (self-check)
 
-- Always check you are in the correct left-menu section before editing.
-- Read the column titles first so you know what each value means.
-- Use clear names that other colleagues can understand later.
-- Before clicking **Submit**, quickly review all required fields.
-- If unsure, make one small change at a time and verify results in the list.
+- Can you explain what **Document profiles** vs **Document attributes** are used for?
+- Can you navigate to Management without help?
+- Can you identify which fields are required before submitting?
+- Can you explain what each profile checkbox changes?
+- Can you verify save results in list screens?
 
----
-
-## Common mistakes to avoid
-
-- Opening the wrong section (profiles vs attributes).
-- Not noticing that profile names are clickable.
-- Forgetting to set checkbox options before saving.
-- Clicking submit too quickly without checking values.
-- Missing the **Create new ...** button in the top-right area.
-
----
-
-## FAQ
-
-### How do I open Management?
-Sign in, then click **Management** in the top menu.
-
-### Where do I add a new profile?
-Go to **Document profiles** and click **Create new profile**.
-
-### Where do I add a new attribute?
-Go to **Document attributes** and click **Create new attribute**.
-
-### What does E-Seal mean in the profile table?
-It shows whether e-seal is turned on (`Yes`) or off (`No`) for that profile.
-
-### What does Attribute count mean?
-It shows how many attributes are connected to a profile.
-
-### I am afraid of changing something by mistake. What should I do?
-Open one item, make one small change, submit, and check the list result before continuing.
-
----
-
-## Quick start (1-minute version)
-
-1. Sign in.
-2. Click **Management**.
-3. Use **Document profiles** to create or update profiles.
-4. Use **Document attributes** to create attribute fields.
-5. Click **Submit** to save each change.
-
----
+If any answer is "No", repeat the relevant task section above before applying production updates.
 
 ## Screenshot index
-
-### Annotated screenshots used in this guide
 
 - `images/management/annotated/01-login-page-annotated.png`
 - `images/management/annotated/02-post-login-home-annotated.png`

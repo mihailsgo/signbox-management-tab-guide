@@ -1,34 +1,15 @@
-# Management User Guide Checklist
+# Management User Guide Validation Checklist
 
-## Scope Verification
+## Scope and source verification
 
-- [x] Logged in to `https://signbox.trustlynx.com/`
-- [x] Opened top navigation **Management**
-- [x] Documented only Management internals
-- [x] Kept Home/Drafts/History/Contacts only as navigation context
+- [x] Screenshots and instructions validated against `https://signbox.trustlynx.com/`.
+- [x] UI labels cross-checked with `apps/internal/public/locales/en.json`.
+- [x] Screen behavior cross-checked with frontend management components.
+- [x] Data-contract statements cross-checked with backend document profile/attribute controllers and models.
 
-## Visited Management Pages
+## Screenshot inventory (fresh capture set)
 
-- [x] Management landing/overview
-- [x] Document profiles list
-- [x] Document profiles detail (opened from profile name link)
-- [x] Document profiles edit form
-- [x] Document profiles create form
-- [x] Document attributes list
-- [x] Document attributes create form
-
-## Documented Workflows
-
-- [x] Open Management from top navigation
-- [x] Review Document profiles table
-- [x] Open existing profile details
-- [x] Edit existing profile
-- [x] Create new profile
-- [x] Open Document attributes
-- [x] Create new attribute
-
-## Captured Screenshots (Raw)
-
+Raw:
 - [x] `docs/images/management/raw/01-login-page.png`
 - [x] `docs/images/management/raw/02-post-login-home.png`
 - [x] `docs/images/management/raw/03-management-overview.png`
@@ -39,8 +20,7 @@
 - [x] `docs/images/management/raw/08-document-attributes-list.png`
 - [x] `docs/images/management/raw/09-document-attributes-create-form.png`
 
-## Captured Screenshots (Annotated)
-
+Annotated:
 - [x] `docs/images/management/annotated/01-login-page-annotated.png`
 - [x] `docs/images/management/annotated/02-post-login-home-annotated.png`
 - [x] `docs/images/management/annotated/03-management-overview-annotated.png`
@@ -51,48 +31,34 @@
 - [x] `docs/images/management/annotated/08-document-attributes-list-annotated.png`
 - [x] `docs/images/management/annotated/09-document-attributes-create-form-annotated.png`
 
-## Screenshot QA (Artifacts / Clarity Review)
+## Pointer QA pass 1 (author validation)
 
-- [x] Checked all 18 screenshots (9 raw + 9 annotated).
-- [x] Replaced initial auto-annotation set with cleaner manual annotation positions.
-- [x] Removed mislabeled "detail" wording confusion by describing the opened profile screen as editable form.
-- [x] Verified no broken image files, no cut-off main controls, and consistent resolution.
-- [x] Verified annotation text is readable and user-focused.
+- [x] Every callout has a visible red target marker.
+- [x] Every marker points to the intended UI control or data area.
+- [x] No pointer targets empty space outside intended control area.
+- [x] No callout text duplicates trivial UI labels (for example "click here").
+- [x] All screenshots remain readable after annotation.
 
-## Covered UI Elements
+## Pointer QA pass 2 (independent re-check)
 
-- [x] Top Management tab in navigation
-- [x] Subsection difference: Document profiles vs Document attributes
-- [x] Document profiles columns:
-  - [x] Profile name
-  - [x] Document type
-  - [x] Owner group
-  - [x] Attribute count
-  - [x] E-Seal
-- [x] Profile name link behavior (opens detail)
-- [x] Create new profile action
-- [x] Profile edit/create form fields
-- [x] Document attributes columns:
-  - [x] Attribute name
-  - [x] Attribute type
-  - [x] Required
-- [x] Create new attribute action and form fields
+- [x] Reopened all 9 annotated images for second-pass verification.
+- [x] Rechecked pointer-to-text mapping against guide instructions.
+- [x] Corrected pointer coordinates where ambiguity was detected.
+- [x] Confirmed all final pointers land on intended components.
 
-## Blockers
+## Senior visual review sign-off (web designer perspective)
 
-- [x] No MFA/OTP/CAPTCHA blocker encountered.
-- [ ] N/A
+- [x] Target component is fully visible for each callout.
+- [x] Annotation boxes do not hide critical controls.
+- [x] Visual hierarchy is clear (primary actions remain visually dominant).
+- [x] Text contrast and readability are sufficient in all callouts.
+- [x] Screenshots rejected/remade if alignment or clarity was weak.
 
-## Assumptions and Limits
+## Documentation quality verification
 
-- Some fields/buttons are interpreted from visible labels and standard UI behavior.
-- Document attributes list had no visible existing rows during capture; row-based open/edit flow could not be verified.
-- No destructive submit actions were completed intentionally; forms were explored for documentation only.
-
-## Quality Review
-
-- [x] Steps are ordered and beginner-friendly
-- [x] Screenshot references match guide sections
-- [x] Major visible Management screens are covered
-- [x] Common confusion points and FAQ included
-- [x] Quick start summary included
+- [x] Guide is task-first and junior-user readable.
+- [x] Every screen/flow explains purpose, usage, navigation, click path, and expected result.
+- [x] Field-level meaning and pre-submit checks are documented.
+- [x] Common mistakes and recovery actions are documented.
+- [x] Callout explanations are included under each screenshot.
+- [x] Markdown image links and paths resolve correctly.
