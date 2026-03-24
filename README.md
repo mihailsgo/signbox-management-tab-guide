@@ -124,13 +124,14 @@ Callouts:
 - **4** **Submit** creates profile and returns to list.
 
 Field meaning and pre-submit check:
-- **Profile name**: clear, stable business name.
-- **Document type**: exact type expected in business flow.
-- **Owner group**: team accountable for updates.
-- **E-Seal profile name**: fill when seal profile is part of process policy.
-- **E-Seal required**: enable if seal must be enforced.
-- **Review required**: enable where review is mandatory.
-- **Do not cancel process on decline**: enable only when decline should not terminate process.
+- **Profile name**: clear, stable business name. **Why this matters:** admins and process initiators must quickly identify the correct profile and avoid editing the wrong one.
+- **Document type**: exact type expected in business flow. **Why this matters:** this drives which profile is selected during process setup; a wrong type can cause users to apply incorrect defaults.
+- **Owner group**: team accountable for updates. **Why this matters:** ownership makes maintenance clear and reduces unmanaged or conflicting profile changes.
+- **E-Seal profile name**: fill when seal profile is part of process policy. **Why this matters:** the profile links to the seal configuration; wrong value can apply the wrong seal behavior.
+- **E-Seal required**: enable if seal must be enforced. **Why this matters:** this changes whether sealing is mandatory in process execution, which can affect compliance expectations.
+- **Review required**: enable where review is mandatory. **Why this matters:** this adds a review expectation to the workflow; incorrect use can either block speed or skip needed control.
+- **Do not cancel process on decline**: enable only when decline should not terminate process. **Why this matters:** this changes decline handling and can keep a process active when teams expect it to stop.
+- **Attributes**: linked reusable fields for this profile. **Why this matters:** attributes control what metadata users must provide and keep document preparation consistent.
 - **Before submit**: validate required fields, checkbox logic, and attribute relevance.
 
 ## Document attributes
@@ -174,9 +175,9 @@ Callouts:
 - **5** **Submit** saves and closes modal.
 
 Attribute field guidance:
-- **Attribute name**: short, unique, meaningful.
-- **Attribute type**: choose input behavior that fits real data (`Text`, `Datetime`, `Checkbox`).
-- **Required**: enable only when missing data should block completion.
+- **Attribute name**: short, unique, meaningful. **Why this matters:** duplicate or unclear names confuse profile setup and can lead admins to select the wrong field.
+- **Attribute type**: choose input behavior that fits real data (`Text`, `Datetime`, `Checkbox`). **Why this matters:** type controls how values are collected; wrong type causes bad data quality and rework.
+- **Required**: enable only when missing data should block completion. **Why this matters:** this decides whether users must provide the value, so overusing it can create unnecessary process friction.
 
 ## Common mistakes and recovery
 
